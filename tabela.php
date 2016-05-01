@@ -1,11 +1,11 @@
 <?php
-include "conecta_mysql.inc";
+include 'conecta_mysql.inc';
 //tabela exibida no index
 
 //sql
-$reso = mysql_query("select * from cadastroCRUD");
+$reso = mysql_query('select * from cadastroCRUD');
 
-echo "
+echo '
 <table>
 <thead>
 <tr>
@@ -14,15 +14,14 @@ echo "
 <th>Telefones</th>
 
 </tr>
-</thead>"; 
+</thead>';
 
 //retorno do sql em forma de lista
-while($row = mysql_fetch_array($reso)){  
-
-	echo '<tr><td>' . $row['id_cadastro'] . '</td><td>' . $row['nm_cadastro'] . '</td><td>' . $row['tel_cadastro'] . '</td></tr>'; 
+while ($row = mysql_fetch_array($reso)) {
+    echo '<tr><td>'.$row['id_cadastro'].'</td><td>'.$row['nm_cadastro'].'</td><td>'.$row['tel_cadastro'].'</td></tr>';
 }
 
-echo "</table>";
+echo '</table>';
 
 ?>
 <!-- botões de atualizar e excluir-->
