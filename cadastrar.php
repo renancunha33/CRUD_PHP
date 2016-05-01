@@ -5,7 +5,7 @@ $user = $_POST['nome'    ];
 $telefone = $_POST['telefone'   ];
 
 //verifica se campos estao vazios
-if (empty($user) || empty($telefone)) {
+if ($user!="" || $telefone!="") {
     //cadastro em sql
     $sql = mysql_query("INSERT INTO cadastroCRUD(nm_cadastro,tel_cadastro) VALUES('$user','$telefone')");
     if($sql){

@@ -1,3 +1,6 @@
+<head>
+<meta charset="UTF-8">
+</head>
 <?php
 
 include 'conecta_mysql.inc';
