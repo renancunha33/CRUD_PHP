@@ -18,10 +18,10 @@
 
         $ID = $_POST['ID'];
         //comando sql
-        $reso = mysql_query("select * from cadastroCRUD WHERE id_cadastro = '$ID' ");
+        $reso = mysqli_query($conexao,"select * from cadastroCRUD WHERE id_cadastro = '$ID' ");
 
         //retorno do comando sql no registro procurado em forma de tabela(while opcional)
-        while ($row = mysql_fetch_array($reso)) {
+        while ($row = mysqli_fetch_array($reso)) {
             echo '
 			<table>
 			<thead>

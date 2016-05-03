@@ -1,5 +1,5 @@
 <?php
 //conexão com banco de dados
-$conexao= mysql_connect("localhost","root","");
-mysql_select_db("CadastroCRUD");
+$conexao= mysqli_connect("localhost","root","","CadastroCRUD");
+//mysql_select_db("CadastroCRUD");
 ?>

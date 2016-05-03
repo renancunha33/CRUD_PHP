@@ -10,7 +10,7 @@ $telefone = $_POST['telefone'];
 if (isset($_POST['ID'])) {
 
     //atualização e script para voltar ao index
-    mysql_query("UPDATE `cadastroCRUD` SET `nm_cadastro` = '$user', `tel_cadastro` = '$telefone' WHERE `cadastroCRUD`.`id_cadastro` = $ID");
+    mysqli_query($conexao,"UPDATE `cadastroCRUD` SET `nm_cadastro` = '$user', `tel_cadastro` = '$telefone' WHERE `cadastroCRUD`.`id_cadastro` = $ID");
     echo"
 	<script>
 	alert('Atualizado com sucesso');

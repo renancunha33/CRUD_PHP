@@ -3,7 +3,7 @@ include 'conecta_mysql.inc';
 //tabela exibida no index
 
 //sql
-$reso = mysql_query('select * from cadastroCRUD');
+$reso = mysqli_query($conexao,'select * from cadastroCRUD');
 
 echo '
 <table>
@@ -17,7 +17,7 @@ echo '
 </thead>';
 
 //retorno do sql em forma de lista
-while ($row = mysql_fetch_array($reso)) {
+while ($row = mysqli_fetch_array($reso)) {
     echo '<tr><td>'.$row['id_cadastro'].'</td><td>'.$row['nm_cadastro'].'</td><td>'.$row['tel_cadastro'].'</td></tr>';
 }
 
