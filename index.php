@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Crud PHP</title>
+<title>Crud PHP</title>
 </head>
 <body>
 	<!--form que envia os dados para novo cadastro no cadastrar.php-->
